@@ -1,13 +1,23 @@
 ﻿capital = 64
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.11.14"
+	ruling_party = fascism
+	last_election = "1933.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 25
-	communism = 25
-	neutrality = 25
-	democratic = 25
+	fascism = 88
+	communism = 6
+	neutrality = 3
+	democratic = 3
+}
+create_country_leader = {
+	name = "Adolf Hitler"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_GER_Adolf_Hitler.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
 }
