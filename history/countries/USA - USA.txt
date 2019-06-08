@@ -1,13 +1,20 @@
 ﻿capital = 361
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 25
-	communism = 25
-	neutrality = 25
-	democratic = 25
+	fascism = 10
+	communism = 1
+	neutrality = 3
+	democratic = 87
+}
+create_country_leader = {
+	name = "Joseph Kennedy Sr"
+	desc = "POLITICS_Joseph_KennedySr_DESC"
+	picture = "Portrait_USA_Joseph_Kennedy_Sr.dds"
+	expire = "1965.1.1"
+	ideology = democratic 
 }
