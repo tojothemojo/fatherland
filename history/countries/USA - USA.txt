@@ -16,5 +16,5 @@ create_country_leader = {
 	desc = "POLITICS_Joseph_KennedySr_DESC"
 	picture = "Portrait_USA_Joseph_Kennedy_Sr.dds"
 	expire = "1965.1.1"
-	ideology = democratic 
+	ideology = liberalism 
 }
