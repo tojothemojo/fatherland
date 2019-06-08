@@ -17,6 +17,7 @@ replace_path="common/scripted_triggers"
 replace_path="common/scripted_localisation"
 replace_path="common/countries"
 replace_path="gfx/loadingscreens/"
+replace_path="gfx/leaders"
 tags={
 	"Alternative History"
 	"Fixes"
