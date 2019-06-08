@@ -1,0 +1,164 @@
+bookmarks = {
+	bookmark = {
+		name = "Fatherland_1964"
+		desc = "Fatherland_1964_DESC"
+		date = 1964.3.31.12
+		picture = "GFX_select_date_1939"
+		default_country = "GER"
+	
+		"CAN" = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+			}
+			focuses = {
+			
+			
+			}
+		}
+		"USA" = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"FRA" = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+			
+		}
+		"GER" = {
+			history = GER_Fatherland_1964_DESC
+			ideology = fascism
+			ideas = {
+				rivalry
+			}
+			focuses = {
+				GER_heilrommel
+				GER_goebbelspartycoup
+				GER_YxLlJgDt
+			}
+		}
+		"ITA" = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+
+			}
+			focuses = {
+
+			}			
+		}
+		"FRF" = {
+			history = PRC_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+
+			}	
+			focuses = {
+
+			}		
+		}
+		"PRC" = {
+			history = PRC_Fatherland_1964_DESC
+			ideology = communism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"---"={
+			history = "Fatherland_1964_DESC"
+		}
+
+		# minors 
+		SOV={
+			minor = yes
+			history = SOV_Fatherland_1964_DESC
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+
+			}
+		}
+		"ENG"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SPR"={
+			minor = yes
+			history = "AST_BLITZKRIEG_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"KAZ"={
+			minor = yes
+			history = "NZL_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+
+
+
+
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

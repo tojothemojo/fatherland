@@ -1,0 +1,86 @@
+spriteTypes = { 
+##Icon For: 623438
+	SpriteType = { 
+		name = "GFX_syria" 
+		texturefile = "gfx/interface/goals/GFX_syria.tga" 
+		
+	}
+	
+	SpriteType = { 
+		name = "GFX_seize" 
+		texturefile = "gfx/interface/goals/GFX_seize.tga" 
+		
+	}
+	
+	SpriteType = { 
+		name = "GFX_erhard" 
+		texturefile = "gfx/interface/goals/GFX_erhardaspresidentofreichsbank.tga" 
+		
+	}
+	
+	SpriteType = { 
+		name = "GFX_krosig" 
+		texturefile = "gfx/interface/goals/GFX_vonkrosigkaspresidentofreichsbank.tga" 
+		
+	}
+	
+	SpriteType = { 
+		name = "GFX_schacht" 
+		texturefile = "gfx/interface/goals/GFX_schachtaspresidentofreichsbank.tga" 
+		
+	}
+	
+	
+	
+	
+	##Icon For: 556992
+	
+	SpriteType = { 
+		name = "GFX_heydrichsunfortunateaccident" 
+		texturefile = "gfx/interface/goals/GFX_heydrichsunfortunateaccident.tga" 
+	}##Icon For: 556990
+	SpriteType = { 
+		name = "GFX_goebbelspartycoup" 
+		texturefile = "gfx/interface/goals/GFX_goebbelspartycoup.tga" 
+	}##Icon For: 561058
+	SpriteType = { 
+		name = "GFX_heilrommel" 
+		texturefile = "gfx/interface/goals/GFX_heilrommel.tga" 
+	}##Icon For: 595063
+	SpriteType = { 
+		name = "GFX_financerockwellsparty" 
+		texturefile = "gfx/interface/goals/GFX_financerockwellsparty.tga" 
+	}##Icon For: 595067
+	SpriteType = { 
+		name = "GFX_influencefinnishpolitics" 
+		texturefile = "gfx/interface/goals/GFX_influencefinnishpolitics.tga" 
+	}##Icon For: 595068
+	SpriteType = { 
+		name = "GFX_contactswedishfascists" 
+		texturefile = "gfx/interface/goals/GFX_contactswedishfascists.tga" 
+	}##Icon For: 572915
+	SpriteType = { 
+		name = "GFX_removelawsagainstchristians" 
+		texturefile = "gfx/interface/goals/GFX_removelawsagainstchristians.tga" 
+	}##Icon For: 618178
+	SpriteType = { 
+		name = "GFX_sailwest" 
+		texturefile = "gfx/interface/goals/GFX_sailwest.tga" 
+	}##Icon For: 618177
+	SpriteType = { 
+		name = "GFX_marcheast" 
+		texturefile = "gfx/interface/goals/GFX_marcheast.tga" 
+	}##Icon For: 623442
+	SpriteType = { 
+		name = "GFX_saudiarabia" 
+		texturefile = "gfx/interface/goals/GFX_saudiarabia.tga" 
+	}##Icon For: 623440
+	SpriteType = { 
+		name = "GFX_iraq" 
+		texturefile = "gfx/interface/goals/GFX_iraq.tga" 
+	}##Icon For: 623431
+	SpriteType = { 
+		name = "GFX_operationfallingcrescent" 
+		texturefile = "gfx/interface/goals/GFX_operationfallingcrescent.tga" 
+	} 
+}

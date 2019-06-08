@@ -1,0 +1,716 @@
+﻿add_namespace = fatherland
+
+##Event: The Republic of India
+country_event = {
+	id = fatherland.1
+	title = fatherland.1.title
+	desc = fatherland.1.desc
+	picture = GFX_therepublicofindia
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag= RAJ
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.1.a
+		ai_chance = { factor = 100}
+		add_stability= -0.2
+	}
+}
+
+##Event: The United States
+news_event = {
+	id = fatherland.2
+	title = fatherland.2.title
+	desc = fatherland.2.desc
+	picture = GFX_news_event_generic_usa_treaty
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag = USA
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.2.a
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: All-German Economic Boom
+news_event = {
+	id = fatherland.3
+	title = fatherland.3.title
+	desc = fatherland.3.desc
+	picture = GFX_report_event_german_troops
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_UjZkfcOD}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.3.a
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Hegemon of Europa
+news_event = {
+	id = fatherland.4
+	title = fatherland.4.title
+	desc = fatherland.4.desc
+	picture = GFX_report_event_german_turkish_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_CtSGdEDi}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.4.a
+		ai_chance = { factor = 1}
+	}
+}
+
+##Event: Germany Hires Italian Economic Theorists
+country_event = {
+	id = fatherland.5
+	title = fatherland.5.title
+	desc = fatherland.5.desc
+	picture = GFX_report_event_partition_of_india
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_MZxcuzHX
+		}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.5.a
+		ai_chance = { factor = 1}
+		GER = { add_opinion_modifier = { target = ITA modifier = similar_economies } }
+		ITA = { add_opinion_modifier = { target = GER modifier = similar_economies } }
+	}
+	option = {
+		name = fatherland.5.b
+		ai_chance = { factor = 1}
+		GER = { add_opinion_modifier = { target = ITA modifier = not_similar_economies } }
+		ITA = { add_opinion_modifier = { target = GER modifier = not_similar_economies } }
+	}
+}
+
+##Event: Germany Hires Indian Economic Theorists
+country_event = {
+	id = fatherland.6
+	title = fatherland.6.title
+	desc = fatherland.6.desc
+	picture = GFX_report_event_partition_of_india
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_GslzSdvu
+		}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.6.a
+		ai_chance = { factor = 1}
+		GER = { add_opinion_modifier = { target = RAJ modifier = similar_economies } }
+		RAJ = { add_opinion_modifier = { target = GER modifier = similar_economies } }
+	}
+	option = {
+		name = fatherland.6.b
+		ai_chance = { factor = 1}
+		GER = { add_opinion_modifier = { target = RAJ modifier = not_similar_economies } }
+		RAJ = { add_opinion_modifier = { target = GER modifier = not_similar_economies } }
+	}
+}
+
+##Event: Reinhard Heydrich Launches SS-Backed Coup
+country_event = {
+	id = fatherland.7
+	title = fatherland.7.title
+	desc = fatherland.7.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_german_italian_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_ZrYEpKTz}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.7.a
+		ai_chance = { factor = 1}
+		set_country_flag = heydrich_coup
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Reinhard Heydrich"
+			desc = "POLITICS_REINHARD_HEYDRICH_DESC"
+			picture = "Portrait_GER_Reinhard_Heydrich.dds"
+			expire = "1992.1.1"
+			ideology = nazism
+			traits = {
+				#nazi_militarist
+			}
+		}
+		
+		add_stability = -0.1
+		add_political_power = -100
+
+	}
+}
+
+##Event: Liquidation of Academia
+country_event = {
+	id = fatherland.8
+	title = fatherland.8.title
+	desc = fatherland.8.desc
+	picture = GFX_report_event_german_reichstag_bombed
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_rFytHiSq
+		}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.8.a
+		ai_chance = { factor = 1}
+		add_political_power = -100
+		add_stability = -0.05
+		add_ideas = GER_anti_intellectualism
+	}
+}
+
+##Event: Killing The Old Guard of the NSDAP
+country_event = {
+	id = fatherland.9
+	title = fatherland.9.title
+	desc = fatherland.9.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_HtPxcpdY
+		}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.9.a
+		ai_chance = { factor = 1}
+		add_political_power = -100
+		add_stability = -0.05
+
+	}
+}
+
+##Event: Purge of The German Bankers
+country_event = {
+	id = fatherland.10
+	title = fatherland.10.title
+	desc = fatherland.10.desc
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus = GER_YzxbWvdh}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.10.a
+		ai_chance = { factor = 1}
+		add_political_power = -100
+		add_stability = -0.05
+		add_ideas = GER_decimated_banking
+	}
+}
+
+##Event: Cleansing Of The Wehrmacht
+country_event = {
+	id = fatherland.11
+	title = fatherland.11.title
+	desc = fatherland.11.desc
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		GER = {has_completed_focus
+			= GER_RjmKSUYL
+		}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.11.a
+		ai_chance = { factor = 1}
+		add_political_power = -100
+		add_stability = -0.05
+		add_ideas = GER_paralized_generals
+	}
+}
+
+##Event: Death of Mussolini
+news_event = {
+	id = fatherland.12
+	title = fatherland.12.title
+	desc = fatherland.12.desc
+	picture = GFX_news_event_generic_read_write
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag = ITA
+		date > 1969.2.1
+		date < 1969.3.24
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.12.a
+		ai_chance = { factor = 1}
+		set_country_flag = mussolini_dead
+		set_country_flag = dino_grandi_duce
+		kill_country_leader = yes
+		add_stability = -0.1
+		add_political_power = -100
+		ITA = {
+			create_country_leader = {
+				name = "Dino Grandi"
+				desc = ""
+				picture = "Portrait_ITA_Dino_Grandi.dds"
+				expire = "1992.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+		}
+	}
+	option = {
+		name = fatherland.12.b
+		ai_chance = { factor = 1}
+		set_country_flag = mussolini_dead
+		set_country_flag = galeazzo_ciano_duce
+		kill_country_leader = yes
+		add_stability = -0.1
+		add_political_power = -100
+		ITA = {
+			create_country_leader = {
+				name = "Galeazzo Ciano"
+				desc = ""
+				picture = "Portrait_ITA_Galeazzo_Ciano.dds"
+				expire = "1992.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}}
+			
+	}
+	
+	option = {
+		name = fatherland.12.c
+		ai_chance = { factor = 1}
+		set_country_flag = mussolini_dead
+		set_country_flag = italo_balbo_duce
+		kill_country_leader = yes
+		add_stability = -0.1
+		add_political_power = -100
+		ITA = {
+			create_country_leader = {
+				name = "Italo Balbo"
+				desc = ""
+				picture = "Portrait_ITA_Italo_Balbo.dds"
+				expire = "1992.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+		}
+	}
+}
+##Event: Dino Grandi New Duce of Italia
+news_event = {
+	id = fatherland.13
+	title = fatherland.13.title
+	desc = fatherland.13.desc
+	picture = GFX_news_event_aid_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_dinograndi}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.13.a
+		ai_chance = { factor = 1}
+		add_stability= 0.1
+		add_political_power = 50
+	}
+}
+
+##Event: Galeazzo Ciano New Duce of Italia
+news_event = {
+	id = fatherland.14
+	title = fatherland.14.title
+	desc = fatherland.14.desc
+	picture = GFX_news_event_aid_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_galeazzociano}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.14.a
+		ai_chance = { factor = 1}
+		add_stability= 0.1
+		add_political_power = 50
+	}
+}
+
+##Event: Italo Balbo New Duce of Italia
+news_event = {
+	id = fatherland.15
+	title = fatherland.15.title
+	desc = fatherland.15.desc
+	picture = GFX_news_event_aid_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_italobalbo}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.15.a
+		ai_chance = { factor = 1}
+		add_stability= 0.1
+		add_political_power = 50
+	}
+}
+
+##Event: Direct Control of The Vatican Outrages Catholics
+country_event = {
+	id = fatherland.16
+	title = fatherland.16.title
+	desc = fatherland.16.desc
+	picture = GFX_report_event_poland_rejects
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_dissolvethepapacy}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.16.a
+		ai_chance = { factor = 1}
+		add_stability= -0.1
+		add_ideas = ITA_autonomous_vatican
+	}
+	option = {
+		name = fatherland.16.b
+		ai_chance = { factor = 1}
+		add_stability= -0.2
+		add_ideas = ITA_catholic_partisans
+	}
+}
+
+##Event: Declaration of the Italian Social Republic
+country_event = {
+	id = fatherland.17
+	title = fatherland.17.title
+	desc = fatherland.17.desc
+	picture = GFX_report_event_japan_europe_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_dissolvethemonarchy}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.17.a
+		ai_chance = { factor = 1}
+		add_ideas = ITA_social_republic
+		add_political_power = 100
+		set_major = yes
+		set_cosmetic_tag = ITA_sr
+	}
+}
+
+##Event: Enrichment of Sudanese Uranium
+country_event = {
+	id = fatherland.18
+	title = fatherland.18.title
+	desc = fatherland.18.desc
+	picture = GFX_report_event_japanese_soldiers_03
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_sudaneseuranium}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.18.a
+		ai_chance = { factor = 1}
+		add_political_power = -250
+	}
+	option = {
+		name = fatherland.18.b
+		ai_chance = { factor = 1}
+		add_political_power = -100
+	}
+}
+
+##Event: Italy Demands Egypt!
+country_event = {
+	id = fatherland.19
+	title = fatherland.19.title
+	desc = fatherland.19.desc
+	picture = GFX_report_event_soldiers_marching
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_demandegypt}
+		tag = GER
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.19.a
+		ai_chance = { factor = 1}
+		ITA = {
+			annex_country = { target = EGY}
+		}
+	}
+	option = {
+		name = fatherland.19.b
+		ai_chance = { factor = 0}
+		ITA = {
+			create_wargoal = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+	}
+}
+
+##Event: Italy Offers Alliance with Portugal
+country_event = {
+	id = fatherland.20
+	title = fatherland.20.title
+	desc = fatherland.20.desc
+	picture = GFX_report_event_german_turkish_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_recruittheportugese}
+		tag = POR
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.20.a
+		ai_chance = { factor = 1}
+		ITA = { add_to_faction = POR }
+	}
+	option = {
+		name = fatherland.20.b
+		ai_chance = { factor = 0}
+		ITA = { add_opinion_modifier = { target = POR modifier = ITA_refused_alliance } }
+	}
+}
+
+##Event: Italy Offers Alliance with Spain
+country_event = {
+	id = fatherland.21
+	title = fatherland.21.title
+	desc = fatherland.21.desc
+	picture = GFX_report_event_german_turkish_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_recruitthespanish}
+		tag = SPR
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.21.a
+		ai_chance = { factor = 1}
+		ITA = { add_to_faction = SPR }
+	}
+	option = {
+		name = fatherland.21.b
+		ai_chance = { factor = 0}
+		ITA = { add_opinion_modifier = { target = SPR modifier = ITA_refused_alliance } }
+	}
+}
+
+##Event: Italy Offers Alliance with Turkey
+country_event = {
+	id = fatherland.22
+	title = fatherland.22.title
+	desc = fatherland.22.desc
+	picture = GFX_report_event_german_turkish_pact
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_recruittheturks}
+		tag = TUR
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.22.a
+		ai_chance = { factor = 1}
+		ITA = { add_to_faction = TUR }
+	}
+	option = {
+		name = fatherland.22.b
+		ai_chance = { factor = 1}
+		ITA = { add_opinion_modifier = { target = TUR modifier = ITA_refused_alliance } }
+	}
+}
+
+##Event: End Of The Sicilian Mafia
+country_event = {
+	id = fatherland.23
+	title = fatherland.23.title
+	desc = fatherland.23.desc
+	picture = GFX_report_event_ger_civil_war
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_finishoffthesicilianmafia}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.23.a
+		ai_chance = { factor = 1}
+		add_ideas = ITA_mafia_free
+	}
+}
+
+##Event: Blackshirt and Mafia Cooperation
+country_event = {
+	id = fatherland.24
+	title = fatherland.24.title
+	desc = fatherland.24.desc
+	picture = GFX_report_event_partition_of_india
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+			= ITA_rethinkthemafiaquestion}
+	}	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.24.a
+		ai_chance = { factor = 1}
+		add_ideas = ITA_mafia_cooperation
+	}
+}
+
+
+##Event: Germany Demands We Bend The Knee
+country_event = {
+	id = fatherland.26
+	title = fatherland.26.title
+	desc = fatherland.26.desc
+	picture = GFX_report_event_chinese_soldiers_running
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.26.a
+		ai_chance = { factor = 1}
+		GER = {
+			create_wargoal = {
+				target = ITA
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	option = {
+		name = fatherland.26.b
+		ai_chance = { factor = 1}
+		add_ideas = ITA_nuclear_ban
+		add_political_power = -225
+		add_stability = -0.15
+	}
+	option = {
+		name = fatherland.26.c
+		ai_chance = { factor = 1}
+		add_political_power = 100
+		add_stability = 0.5
+		GER = {
+			country_event = { id = fatherland.31 days = 1460 }
+		}
+	}
+}
+
+##Event: The Italians Lied To Us
+country_event = {
+	id = fatherland.27
+	title = fatherland.27.title
+	desc = fatherland.27.desc
+	picture = GFX_report_event_soviet_in_riga
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.27.a
+		ai_chance = { factor = 1}
+		create_wargoal = {
+			target = ITA
+			type = puppet_wargoal_focus
+		}
+	}
+	option = {
+		name = fatherland.27.b
+		ai_chance = { factor = 1}
+		add_political_power = -225
+		add_stability = -0.10
+	}
+}
+
+##Event: Renew The Pact of Steel?
+country_event = {
+	id = fatherland.28
+	title = fatherland.28.title
+	desc = fatherland.28.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.28.a
+		ai_chance = { factor = 1}
+		diplomatic_relation = { country = ITA relation = non_aggression_pact }
+		add_opinion_modifier = { target = ITA modifier = pact_of_steel }
+	}
+	option = {
+		name = fatherland.28.b
+		ai_chance = { factor = 1}
+		ITA = { add_opinion_modifier = { target = GER modifier = ITA_refused_alliance } }
+	}
+}
+
+##Event: The New Führer Died
+country_event = {
+	id = fatherland.29
+	title = fatherland.29.title
+	desc = fatherland.29.desc
+	picture = GFX_event_heydrich_died
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = fatherland.29.a
+		ai_chance = { factor = 1}
+		kill_country_leader = yes
+		
+				create_country_leader = {
+			name = "The Reichstag"
+			desc = ""
+			picture = "Portrait_GER_Reichstag.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				
+			}
+		}
+	}
+}
+

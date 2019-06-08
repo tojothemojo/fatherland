@@ -1,0 +1,324 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_edward_viii"
+		texturefile = "gfx/interface/ideas/idea_edward_viii.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scheming_berlin"
+		texturefile = "gfx/interface/ideas/idea_scheming_berlin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mohammad_mosaddegh"
+		texturefile = "gfx/interface/ideas/idea_mohammad_mosaddegh.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_endless_war"
+		texturefile = "gfx/interface/ideas/idea_endless_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_aggressive_expansion"
+		texturefile = "gfx/interface/ideas/idea_aggressive_expansion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_aggressive_intervention"
+		texturefile = "gfx/interface/ideas/idea_aggressive_intervention.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_opportunistic"
+		texturefile = "gfx/interface/ideas/idea_opportunistic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foreign_isolation"
+		texturefile = "gfx/interface/ideas/idea_foreign_isolation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ss_logo"
+		texturefile = "gfx/interface/ideas/idea_ss_logo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_european_community_member"
+		texturefile = "gfx/interface/ideas/idea_european_community_member.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_european_community_leader"
+		texturefile = "gfx/interface/ideas/idea_european_community_leader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_security_council_member"
+		texturefile = "gfx/interface/ideas/idea_security_council_member.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_homosexual_death_penalty"
+		texturefile = "gfx/interface/ideas/idea_homosexual_death_penalty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_homosexual_illegal"
+		texturefile = "gfx/interface/ideas/idea_homosexual_illegal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_homosexual_legal"
+		texturefile = "gfx/interface/ideas/idea_homosexual_legal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_homosexual_recognition"
+		texturefile = "gfx/interface/ideas/idea_homosexual_recognition.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_homosexual_marriage"
+		texturefile = "gfx/interface/ideas/idea_homosexual_marriage.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_press_state_control"
+		texturefile = "gfx/interface/ideas/idea_press_state_control.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_press_free"
+		texturefile = "gfx/interface/ideas/idea_press_free.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_press_censored"
+		texturefile = "gfx/interface/ideas/idea_press_censored.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_voting_none"
+		texturefile = "gfx/interface/ideas/idea_voting_none.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_voting_false_elections"
+		texturefile = "gfx/interface/ideas/idea_voting_false_elections.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_voting_intimidation"
+		texturefile = "gfx/interface/ideas/idea_voting_intimidation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_voting_vote_buying"
+		texturefile = "gfx/interface/ideas/idea_voting_vote_buying.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_voting_secret_ballot"
+		texturefile = "gfx/interface/ideas/idea_voting_secret_ballot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_surveillance_total"
+		texturefile = "gfx/interface/ideas/idea_surveillance_total.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_surveillance_total_civilian"
+		texturefile = "gfx/interface/ideas/idea_surveillance_total_civilian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_surveillance_general"
+		texturefile = "gfx/interface/ideas/idea_surveillance_general.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_surveillance_none"
+		texturefile = "gfx/interface/ideas/idea_surveillance_none.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_segregation_outlawed"
+		texturefile = "gfx/interface/ideas/idea_segregation_outlawed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_segregation_allowed"
+		texturefile = "gfx/interface/ideas/idea_segregation_allowed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_parliament_role_law_voting"
+		texturefile = "gfx/interface/ideas/idea_parliament_role_law_voting.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_parliament_role_elected_consultative"
+		texturefile = "gfx/interface/ideas/idea_parliament_role_elected_consultative.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_parliament_role_appointed_consultative"
+		texturefile = "gfx/interface/ideas/idea_parliament_role_appointed_consultative.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_parliament_role_powerless"
+		texturefile = "gfx/interface/ideas/idea_parliament_role_powerless.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_parliament_role_none"
+		texturefile = "gfx/interface/ideas/idea_parliament_role_none.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_women_in_military_equal_pay"
+		texturefile = "gfx/interface/ideas/idea_women_in_military_equal_pay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_women_in_military_permitted"
+		texturefile = "gfx/interface/ideas/idea_women_in_military_permitted.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_women_in_military_reserves"
+		texturefile = "gfx/interface/ideas/idea_women_in_military_reserves.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_women_in_military_none"
+		texturefile = "gfx/interface/ideas/idea_women_in_military_none.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_low_taxes"
+		texturefile = "gfx/interface/ideas/idea_very_low_taxes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_taxes"
+		texturefile = "gfx/interface/ideas/idea_low_taxes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_medium_taxes"
+		texturefile = "gfx/interface/ideas/idea_medium_taxes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_high_taxes"
+		texturefile = "gfx/interface/ideas/idea_high_taxes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_very_high_taxes"
+		texturefile = "gfx/interface/ideas/idea_very_high_taxes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_open_borders"
+		texturefile = "gfx/interface/ideas/idea_immigration_open_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_loose"
+		texturefile = "gfx/interface/ideas/idea_immigration_loose.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_regulated"
+		texturefile = "gfx/interface/ideas/idea_immigration_regulated.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_majority_race"
+		texturefile = "gfx/interface/ideas/idea_immigration_majority_race.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_only_workers"
+		texturefile = "gfx/interface/ideas/idea_immigration_only_workers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_only_high_class"
+		texturefile = "gfx/interface/ideas/idea_immigration_only_high_class.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_immigration_closed_borders"
+		texturefile = "gfx/interface/ideas/idea_immigration_closed_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_spending_very_low"
+		texturefile = "gfx/interface/ideas/idea_military_spending_very_low.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_spending_low"
+		texturefile = "gfx/interface/ideas/idea_military_spending_low.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_spending_moderate"
+		texturefile = "gfx/interface/ideas/idea_military_spending_moderate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_spending_high"
+		texturefile = "gfx/interface/ideas/idea_military_spending_high.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_spending_very_high"
+		texturefile = "gfx/interface/ideas/idea_military_spending_very_high.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_un_membership_observer"
+		texturefile = "gfx/interface/ideas/idea_un_membership_observer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_un_membership_total"
+		texturefile = "gfx/interface/ideas/idea_un_membership_total.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_un_membership_none"
+		texturefile = "gfx/interface/ideas/idea_un_membership_none.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_environment_policy_total_intervention"
+		texturefile = "gfx/interface/ideas/idea_environment_policy_total_intervention.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_environment_policy_strong_regulations"
+		texturefile = "gfx/interface/ideas/idea_environment_policy_strong_regulations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_environment_policy_light_regulations"
+		texturefile = "gfx/interface/ideas/idea_environment_policy_light_regulations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_environment_policy_pollute"
+		texturefile = "gfx/interface/ideas/idea_environment_policy_pollute.dds"
+	}
+	
+	
+}

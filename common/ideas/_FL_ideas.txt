@@ -1,0 +1,547 @@
+ideas = {
+
+	foreign_policy = {
+		law = yes
+		
+		aggressive_expansion = {
+			cost = 300
+			removal_cost = -1
+			level = 5
+			
+			available = {
+				NOT = { has_government = neutrality }
+				threat > 0.3
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.05
+				political_power_gain = -0.2
+				research_speed_factor = 0.01
+				
+			}
+			
+			picture = GFX_idea_aggressive_expansion
+			
+			cancel_if_invalid = no
+		}
+		
+		aggressive_intervention = {
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			    
+			}
+			
+			modifier = {
+				political_power_gain = 0.3
+				opinion_gain_monthly_factor = 0.05
+			}
+			
+			picture = GFX_idea_aggressive_intervention
+			
+			cancel_if_invalid = no
+		}
+		
+		foreign_isolation = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+			    
+			}
+			
+			modifier = {
+			    political_power_gain = 0.6
+				consumer_goods_factor = -0.02
+				justify_war_goal_time = 0.15
+				ai_get_ally_desire_factor = -50
+				
+			}
+			
+			picture = GFX_idea_foreign_isolation
+			
+			default = yes
+			cancel_if_invalid = no
+		}
+		
+		opportunistic = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			    NOT = { has_government = communism }
+			}
+			
+			modifier = {
+				trade_opinion_factor = 0.3
+				opinion_gain_monthly_factor = 0.01
+				political_power_gain = 0.2
+				justify_war_goal_time = 0.15
+				
+			}
+			
+			picture = GFX_idea_opportunistic
+			
+			cancel_if_invalid = no
+		}
+		
+	}
+    
+	women_in_military = {
+		law = yes
+		
+		women_in_military_none = {
+			cost = 150
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+				conscription = -0.005
+				political_power_gain = 0.3
+				army_attack_factor = 0.1
+				
+				
+			}
+			
+			picture = GFX_idea_women_in_military_none
+			
+			cancel_if_invalid = no
+		}
+		
+		women_in_military_reserves = {
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				conscription = -0.002
+				political_power_gain = 0.2
+				enemy_partisan_effect = -0.15
+				training_time_army_factor = 0.02
+				
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			picture = GFX_idea_women_in_military_reserves
+			
+			cancel_if_invalid = no
+		}
+		
+		women_in_military_permitted = {
+			cost = 300
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+			    conscription = 0.002
+				enemy_partisan_effect = -0.2
+				training_time_army_factor = 0.04
+				army_morale_Factor = 0.10
+				
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			picture = GFX_idea_women_in_military_permitted
+			
+			default = yes
+			cancel_if_invalid = no
+		}
+		
+		women_in_military_equal_pay = {
+			cost = 550
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				conscription = 0.003
+				enemy_partisan_effect = -0.2
+				training_time_army_factor = 0.04
+				army_morale_Factor = 0.10
+				
+				political_power_gain = -0.1
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			picture = GFX_idea_women_in_military_equal_pay
+			
+			cancel_if_invalid = no
+		}
+		
+		
+	}
+	
+	taxes = {
+		law = yes
+		
+		very_high_taxes = {
+			cost = 350
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				#research_time_factor = 0.25
+			}
+			
+			picture = GFX_idea_very_high_taxes
+			
+			cancel_if_invalid = no
+		}
+		
+		high_taxes = {
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				#research_time_factor = 0.1
+			}
+			
+			picture = GFX_idea_high_taxes
+			
+			cancel_if_invalid = no
+		}
+		
+		medium_taxes = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				
+			}
+			
+			picture = GFX_idea_medium_taxes
+			
+			default = yes
+			cancel_if_invalid = no
+		}
+		
+		low_taxes = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				#research_time_factor = -0.1
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+			
+			picture = GFX_idea_low_taxes
+			
+			cancel_if_invalid = no
+		}
+		
+		very_low_taxes = {
+			cost = 350
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				#research_time_factor = -0.2
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+			
+			picture = GFX_idea_very_low_taxes
+			
+			cancel_if_invalid = no
+		}
+		
+		
+	}
+	
+	immigration = {
+		law = yes
+		
+		immigration_closed_borders = {
+			cost = 200
+			removal_cost = -1
+			level = 7
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.2
+				consumer_goods_factor = -0.05
+			}
+			
+			picture = GFX_idea_immigration_closed_borders
+			
+			cancel_if_invalid = no
+		}
+		
+		immigration_only_high_class = {
+			cost = 150
+			removal_cost = -1
+			level = 6
+			
+			modifier = {
+				#research_time_factor = -0.01
+				political_power_gain = -0.3
+				MONTHLY_POPULATION = 0.02
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+				}
+			}
+			
+			picture = GFX_idea_immigration_only_high_class
+			
+			cancel_if_invalid = no
+		}
+		
+		immigration_only_workers = {
+			cost = 150
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+			    industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.02
+				local_resources_factor = 0.1
+				MONTHLY_POPULATION = 0.05
+				
+				
+			}
+			
+			picture = GFX_idea_immigration_only_workers
+			
+			default = yes
+			cancel_if_invalid = no
+		}
+		
+		immigration_majority_race = {
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				
+				political_power_gain = 0.3
+				consumer_goods_factor = 0.02
+				
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = communism
+					has_government = democratic
+				}
+			}
+			
+			picture = GFX_idea_immigration_majority_race
+			
+			cancel_if_invalid = no
+		}
+		
+		immigration_regulated = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+			
+			}
+			
+			picture = GFX_idea_immigration_regulated
+			
+			cancel_if_invalid = no
+		}
+		
+		immigration_loose = {
+			cost = 200
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.2
+				consumer_goods_factor = 0.03
+			}
+			
+			picture = GFX_idea_immigration_loose
+			
+			cancel_if_invalid = no
+		}
+		
+		immigration_open_borders = {
+			cost = 300
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.4
+				consumer_goods_factor = 0.07
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			picture = GFX_idea_immigration_open_borders
+			
+			cancel_if_invalid = no
+		}
+		
+		
+	}
+	
+	military_spending = {
+		law = yes
+		
+		military_spending_very_high = {
+			cost = 300
+			removal_cost = -1
+			level = 5
+			
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				training_time_army_factor = -0.15
+				political_power_gain = -0.3
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_infrastructure_factor = -0.25
+		        production_speed_synthetic_refinery_factor = -0.2
+				
+			}
+			
+			picture = GFX_idea_military_spending_very_high
+			
+			cancel_if_invalid = no
+		}
+		
+		military_spending_high = {
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			modifier = {
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				training_time_army_factor = -0.1
+				political_power_gain = -0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_infrastructure_factor = -0.15
+		        production_speed_synthetic_refinery_factor = -0.15
+			}
+			
+			picture = GFX_idea_military_spending_high
+			
+			cancel_if_invalid = no
+		}
+		
+		military_spending_moderate = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				training_time_army_factor = -0.05
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+		        production_speed_synthetic_refinery_factor = -0.1
+				
+			}
+			
+			picture = GFX_idea_military_spending_moderate
+			
+			default = yes
+			cancel_if_invalid = no
+		}
+		
+		military_spending_low = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				training_time_army_factor = 0.2
+				political_power_gain = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				
+			}
+			
+			picture = GFX_idea_military_spending_low
+			
+			cancel_if_invalid = no
+		}
+		
+		military_spending_very_low = {
+			cost = 300
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				training_time_army_factor = 0.3
+				political_power_gain = 0.7
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+		        production_speed_synthetic_refinery_factor = 0.2
+				
+				
+			}
+			
+			available = {
+			    NOT = {
+				    has_government = fascism
+				}
+			}
+			
+			picture = GFX_idea_military_spending_very_low
+			
+			cancel_if_invalid = no
+		}
+		
+		
+		
+	}
+	
+	
+	
+
+	
+	
+
+
+
+
+
+}

@@ -1,0 +1,26 @@
+spriteTypes = {	
+
+	
+	spriteType = {
+		name = "GFX_fatherland_report_event_hitler_dead"
+		texturefile = "gfx/event_pictures/fatherland_report_event_hitler_dead.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_event_heydrich_died"
+		texturefile = "gfx/event_pictures/event_heydrich_died.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}

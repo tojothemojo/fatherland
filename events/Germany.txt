@@ -1,0 +1,50 @@
+﻿add_namespace = germany
+
+
+#Hitler dies
+country_event = {
+	id = germany.2
+	title = germany.2.t
+	desc = germany.2.d
+	picture = GFX_fatherland_report_event_hitler_dead
+	
+	fire_only_once = yes
+	
+	immediate = { 
+		
+	    set_country_flag = hitler_dead
+	}
+	
+	trigger = {
+		tag = GER
+		date < 1964.4.20
+		date > 1964.4.1
+		
+	}
+	
+			mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {	
+		name = germany.2.o1
+		ai_chance = {
+			factor = 100
+		}
+		kill_country_leader = yes
+		add_political_power = -150
+		add_stability = -0.1
+		create_country_leader = {
+			name = "The Reichstag"
+			desc = ""
+			picture = "Portrait_GER_Reichstag.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				
+			}
+		}
+		
+		
+	}
+}

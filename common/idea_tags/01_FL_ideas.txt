@@ -1,0 +1,15 @@
+idea_categories = {
+	administration = {
+		slot = women_in_military
+		slot = taxes
+		slot = immigration
+		slot = military_spending
+		#slot = un_membership
+		#slot = environment_policy
+		slot = foreign_policy 
+		
+		
+		cost = 150
+		removal_cost = 0
+	}
+}

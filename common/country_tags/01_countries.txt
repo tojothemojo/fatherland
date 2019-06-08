@@ -1,0 +1,6 @@
+GMA	= "countries/German Africa.txt"
+OST	= "countries/Ostland.txt"
+MOS	= "countries/Moskowien.txt"
+CAU	= "countries/Kaukasien.txt"
+FRF = "countries/Free France.txt"
+

@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+		GER_indian_advisors = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				#political_advisor_cost_factor = 0.25
+				political_power_factor = 0.02
+			}
+			
+			picture = FRA_matignon_agreements
+		}
+		
+		GER_corporatism = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				#political_advisor_cost_factor = 0.02
+				political_power_factor = 0.02
+			}
+			
+			picture = FRA_matignon_agreements
+		}
+		
+		
+		GER_state_religion_asatru = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				#political_advisor_cost_factor = 0.1
+				political_power_factor = 0.1
+				conscription = 0.04
+			}
+			
+			picture = FRA_matignon_agreements
+		}
+		
+		
+		
+	}
+	
+	
+	
+	
+}

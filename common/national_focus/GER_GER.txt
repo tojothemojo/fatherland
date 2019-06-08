@@ -1,0 +1,2246 @@
+focus_tree = { 
+	id = GER
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			tag = GER 
+		} 
+	} 
+#Focus for Expand Lebensborn
+	focus = { 
+		id = GER_FZEdljSb
+		icon = GFX_goal_generic_national_unity
+		x = 5
+		y = 3
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_djiEAkHU } 
+		completion_reward = { 
+			add_ideas = GER_lebensborn
+		} 
+
+	} 
+
+#Focus for Nationalize Strategic Industries
+	focus = { 
+		id = GER_iQSIldAP
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1
+		y = 3
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_FWRmlLZY } 
+		completion_reward = { 
+			add_political_power = 200
+			add_stability = -0.03
+		} 
+
+	} 
+
+#Focus for Syria
+	focus = { 
+		id = GER_syria
+		icon = GFX_syria
+		x = 53
+		y = 11
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_operationfallingcrescent } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			create_wargoal= { 
+				type = annex_everything 
+				target = SYR
+			}
+		} 
+
+	} 
+
+#Focus for Gott Strafe Ireland
+	focus = { 
+		id = GER_GQnlZvru
+		icon = GFX_focus_AST_never_gallipoli
+		x = 40
+		y = 6
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_edfrOuUJ } 
+		completion_reward = { 
+
+
+			create_wargoal = {
+				target = IRE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SCO
+				type = annex_everything
+			}
+
+
+		} 
+
+	} 
+
+#Focus for Closed Communications
+	focus = { 
+		id = GER_NcCehUBD
+		icon = GFX_goal_generic_propaganda
+		x = 14
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_QSPtdjgs } 
+		prerequisite = { focus = GER_myzuSJIt } 
+		completion_reward = { 
+			add_ideas = GER_censorship
+		} 
+
+	} 
+
+#Focus for Lebensraum Finances
+	focus = { 
+		id = GER_djiEAkHU
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_clTazgJK } 
+		completion_reward = { 
+			add_political_power = -50
+			add_stability = -0.05
+		} 
+
+	} 
+
+#Focus for Heydrichs Unfortunate Accident
+	focus = { 
+		id = GER_heydrichsunfortunateaccident
+		icon = GFX_heydrichsunfortunateaccident
+		x = 50
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_ZrYEpKTz } 
+		mutually_exclusive = { focus = GER_BlTQrMsF } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_stability = -0.15
+			add_political_power = -65
+			country_event = { id = fatherland.29 days = 4 }
+		} 
+
+	} 
+
+#Focus for Denomination
+	focus = { 
+		id = GER_AGQSWvFz
+		icon = GFX_goal_unknown
+		x = 25
+		y = 2
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_WyDSxqlf } 
+		completion_reward = { 
+			add_ideas = GER_denomination
+		} 
+
+	} 
+
+#Focus for Schacht as president of Reichsbank
+	focus = { 
+		id = GER_rZdhzKFa
+		icon = GFX_schacht
+		x = 15
+		y = 1
+		cost = 2
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_qKrRiyoc } 
+		mutually_exclusive = { focus = GER_WyDSxqlf } mutually_exclusive = { focus = GER_clTazgJK }
+	} 
+
+#Focus for Extended War Economy
+	focus = { 
+		id = GER_FWRmlLZY
+		icon = GFX_goal_rhineland
+		x = 1
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_clTazgJK } 
+		completion_reward = { 
+			add_ideas = GER_extended_war_economy
+		} 
+
+	} 
+
+#Focus for Lowering taxes
+	focus = { 
+		id = GER_lEqFOnWJ
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 23
+		y = 3
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_WyDSxqlf } 
+
+	} 
+
+#Focus for Continue colonization in the East
+	focus = { 
+		id = GER_LNCvAMyu
+		icon = GFX_goal_generic_position_armies
+		x = 34
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_vrWFYXqV } 
+		mutually_exclusive = { focus = GER_edVoCfKs } 
+		completion_reward = { 
+			add_political_power = 50
+		} 
+
+	} 
+
+#Focus for Generalplan Ost
+	focus = { 
+		id = GER_vrWFYXqV
+		icon = GFX_goal_rhineland
+		x = 31
+		y = 1
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_xNWifqta } 
+		completion_reward = { 
+			add_political_power = 45
+		} 
+
+	} 
+
+#Focus for Death of the Führer
+	focus = { 
+		id = GER_xNWifqta
+		icon = GFX_focus_ger_reichskommisariats
+		x = 40
+		y = 0
+		cost = 1
+		available_if_capitulated = yes 
+		available = { 
+
+
+			has_country_flag = hitler_dead
+
+
+		} 
+		completion_reward = { 
+
+
+			add_stability = -0.10
+
+
+		} 
+
+	} 
+
+#Focus for Focus on Africa
+	focus = { 
+		id = GER_edVoCfKs
+		icon = GFX_goal_tfv_saf_support_german_coup
+		x = 28
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_vrWFYXqV } 
+		mutually_exclusive = { focus = GER_LNCvAMyu } 
+		completion_reward = { 
+			add_political_power = 50
+			GMA = {add_political_power = 50}
+		} 
+
+	} 
+
+#Focus for Exploit the land
+	focus = { 
+		id = GER_SOebaQdY
+		icon = GFX_goal_generic_construction2
+		x = 28
+		y = 4
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_edVoCfKs } 
+		completion_reward = { 
+			GMA = {
+				add_resource = {type = oil amount = 4 state = 538}
+				add_resource = {type = rubber amount = 4 state = 274}
+
+			}
+		} 
+
+	} 
+
+#Focus for Purge Inadequate Generals
+	focus = { 
+		id = GER_purgeinadequategenerals
+		icon = GFX_focus_rom_handle_king
+		x = 57
+		y = 5
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_rommelswehrmachtreforms } 
+		ai_will_do = { 
+			factor = 1
+		} 
+
+	} 
+
+#Focus for Expand slave labour
+	focus = { 
+		id = GER_INhluSaD
+		icon = GFX_goal_unknown
+		x = 31
+		y = 3
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_LNCvAMyu focus = GER_edVoCfKs } 
+		completion_reward = { 
+			OST = { add_resource ={type = steel amount = 4 state = 12}}
+			UKR = {add_resource ={type = tungsten amount = 4 state = 203} }
+			GMA = {add_resource ={type = oil amount = 4 state = 546}}
+		} 
+
+	} 
+
+#Focus for Aryanize the Party
+	focus = { 
+		id = GER_aryanizetheparty
+		icon = GFX_focus_CZE_german_puppet
+		x = 44
+		y = 8
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_partydiscipline } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = -65
+		} 
+
+	} 
+
+#Focus for Silence Rebels
+	focus = { 
+		id = GER_ZxDVPLtp
+		icon = GFX_goal_generic_small_arms
+		x = 34
+		y = 4
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_LNCvAMyu } 
+		completion_reward = { 
+			add_political_power = 100
+
+			OST= {add_political_power = 100}
+			UKR= {add_political_power = 100}
+			MOS= {add_political_power = 100}
+			CAU= {add_political_power = 100}
+		} 
+
+	} 
+
+#Focus for Goebbels Party Coup
+	focus = { 
+		id = GER_goebbelspartycoup
+		icon = GFX_goebbelspartycoup
+		x = 47
+		y = 3
+		cost = 1
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_heydrichsunfortunateaccident } 
+		mutually_exclusive = { focus = GER_militarycoalitiongovernment } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_stability = -0.05
+			create_country_leader = {
+				name = "Joseph Goebbels"
+				desc = "POLITICS_"
+				picture = "Portrait_GER_Joseph_Goebbels.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+		} 
+
+	} 
+
+#Focus for Germanize British Settlers
+	focus = { 
+		id = GER_hCoaYpOq
+		icon = GFX_focus_ger_oppose_hitler
+		x = 27
+		y = 6
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_EjGTeMIC } 
+		completion_reward = { 
+			GMA = {
+				add_stability = 0.10
+
+			}
+			add_political_power = -15
+		} 
+
+	} 
+
+#Focus for Pour Resources to Ukraine
+	focus = { 
+		id = GER_sxiRkzEc
+		icon = GFX_goal_generic_production2
+		x = 33
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_ZxDVPLtp } 
+		completion_reward = { 
+			UKR ={ 
+				add_resource
+				= { type = oil amount = 2 state = 203 }
+				add_resource
+				= { type = steel amount = 4 state = 226 }
+				add_resource
+				= { type = tungsten amount = 2 state = 201 }
+				add_resource
+				= { type = rubber amount = 4 state = 93 }
+
+
+
+			}
+
+			add_political_power = -25
+		} 
+
+	} 
+
+#Focus for Pour Resources to Ostland
+	focus = { 
+		id = GER_oPMAfRmd
+		icon = GFX_goal_generic_production2
+		x = 35
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_ZxDVPLtp } 
+		completion_reward = { 
+			OST ={ 
+				add_resource
+				= { type = oil amount = 2 state = 190 }
+				add_resource
+				= { type = steel amount = 4 state = 11 }
+				add_resource
+				= { type = tungsten amount = 191 state = 201 }
+				add_resource
+				= { type = rubber amount = 4 state = 96 }
+			}
+
+			add_political_power = -25
+		} 
+
+	} 
+
+#Focus for Total Annexation
+	focus = { 
+		id = GER_YxLlJgDt
+		icon = GFX_focus_ger_reichskommisariats
+		x = 34
+		y = 7
+		cost = 5
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_EojycHrV } 
+		prerequisite = { focus = GER_IbreCayO } 
+		completion_reward = { 
+			annex_country = { target = OST}
+			annex_country = { target = MOS}
+			annex_country = { target = CAU}
+		} 
+
+	} 
+
+#Focus for Propagandize the Baltic Frontier
+	focus = { 
+		id = GER_IbreCayO
+		icon = GFX_goal_generic_propaganda
+		x = 35
+		y = 6
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_oPMAfRmd } 
+		completion_reward = { 
+			OST = {add_manpower = 25000 add_political_power = -50}
+		} 
+
+	} 
+
+#Focus for Direct Control of the Colonies
+	focus = { 
+		id = GER_iIVYRxvm
+		icon = GFX_goal_unknown
+		x = 28
+		y = 7
+		cost = 5
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_sendcoloniststorhodesia } 
+		prerequisite = { focus = GER_hCoaYpOq } 
+		completion_reward = { 
+			annex_country = {target = GMA}
+		} 
+
+	} 
+
+#Focus for Send Colonists to Rhodesia
+	focus = { 
+		id = GER_sendcoloniststorhodesia
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 29
+		y = 6
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_ucnYDHmd } 
+		completion_reward = { 
+			GMA = {add_manpower = 15000}
+		} 
+
+	} 
+
+#Focus for Officers to lead the Oil Refinery's
+focus = { 
+id = GER_ucnYDHmd
+icon = GFX_goal_generic_construct_mil_factory
+x = 29
+y = 5
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_SOebaQdY } 
+completion_reward = { 
+GMA = {
+add_stability = 0.05
+add_resource = {type = oil amount = 5 state = 660}  
+
+}
+} 
+
+} 
+
+#Focus for Labour for our Rubber Factories
+focus = { 
+id = GER_EjGTeMIC
+icon = GFX_focus_generic_rubber
+x = 27
+y = 5
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_SOebaQdY } 
+completion_reward = { 
+GMA = {
+add_political_power = -25
+add_resource = {type = rubber amount = 6 state = 547} 
+}
+} 
+
+} 
+
+#Focus for SS Mobilization
+focus = { 
+id = GER_ssmobilization
+icon = GFX_focus_generic_little_entente
+x = 48
+y = 5
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_partyprovisionalgovernment } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+add_manpower = 15000
+add_political_power = -25
+} 
+
+} 
+
+#Focus for Streamlined MIC
+focus = { 
+id = GER_QSPtdjgs
+icon = GFX_goal_generic_small_arms
+x = 13
+y = 4
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_MZxcuzHX focus = GER_GslzSdvu } 
+completion_reward = { 
+add_ideas = GER_streamlined_mic
+} 
+
+} 
+
+#Focus for Nationalize Prora
+focus = { 
+id = GER_MNFkjfxs
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 0
+y = 4
+cost = 3
+available_if_capitulated = yes 
+prerequisite = { focus = GER_iQSIldAP } 
+mutually_exclusive = { focus = GER_LnipzRrd } 
+completion_reward = { 
+5 = {
+add_extra_state_shared_building_slots = 4
+add_building_construction = {
+type = dockyard
+instant_build = yes
+}
+add_building_construction = {
+type = naval_base
+level = 2
+province = 241
+instant_build = yes
+}
+}
+} 
+
+} 
+
+#Focus for Von Krosigk as president of Reichsbank
+focus = { 
+id = GER_clTazgJK
+icon = GFX_krosig
+x = 4
+y = 1
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_qKrRiyoc } 
+mutually_exclusive = { focus = GER_rZdhzKFa}
+mutually_exclusive = { focus = GER_WyDSxqlf}
+} 
+
+#Focus for Erhard as president of Reichsbank
+focus = { 
+id = GER_WyDSxqlf
+icon = GFX_erhard
+x = 23
+y = 1
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_qKrRiyoc } 
+mutually_exclusive = { focus = GER_rZdhzKFa}
+mutually_exclusive = { focus = GER_clTazgJK}
+
+} 
+
+#Focus for Deutsche Wirtschaft
+focus = { 
+id = GER_qKrRiyoc
+icon = GFX_goal_generic_construction2
+x = 12
+y = 0
+cost = 2
+available_if_capitulated = yes 
+completion_reward = { 
+add_political_power= 50
+} 
+
+} 
+
+#Focus for Propagandize the Ukrainian Frontier
+focus = { 
+id = GER_EojycHrV
+icon = GFX_goal_generic_propaganda
+x = 33
+y = 6
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_sxiRkzEc } 
+completion_reward = { 
+UKR = {add_manpower = 30000 add_political_power = -50}
+} 
+
+} 
+
+#Focus for Investor's Paradise
+	focus = { 
+		id = GER_krXaOLlG
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 9
+		y = 5
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_KCRqlJpt } 
+		completion_reward = { 
+			add_ideas = GER_trade_national_socialism
+		} 
+
+	} 
+
+#Focus for All-German Economic Boom
+	focus = { 
+		id = GER_UjZkfcOD
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 7
+		y = 6
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_nmZigXSd } 
+		prerequisite = { focus = GER_krXaOLlG } 
+		completion_reward = { 
+			add_timed_idea = {
+				idea = GER_eco_finished
+				days = 365
+			}
+			country_event = {
+				id = fatherland.5
+				days = 15
+			}
+		} 
+
+	} 
+
+#Focus for Armament Expansion
+	focus = { 
+		id = GER_nmWRcraI
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_LnipzRrd focus = GER_MNFkjfxs } 
+		completion_reward = { 
+			add_ideas = GER_military_factory_expansion
+		} 
+
+	} 
+
+#Focus for Recycling Effort
+	focus = { 
+		id = GER_TufgjSaq
+		icon = GFX_goal_generic_oil_refinery
+		x = 15
+		y = 4
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_GslzSdvu focus = GER_MZxcuzHX } 
+		completion_reward = { 
+			5 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = GER_coal_liquification
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
+		} 
+
+	} 
+
+#Focus for Abandon The Gold Standard
+	focus = { 
+		id = GER_VjZGFSKx
+		icon = GFX_goal_generic_forceful_treaty
+		x = 21
+		y = 3
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_SQGiFnTc } 
+		completion_reward = { 
+			add_stability = -0.1
+			add_political_power = -100
+		} 
+
+	} 
+
+#Focus for Keynesian Projects
+	focus = { 
+		id = GER_MYueQnIr
+		icon = GFX_goal_generic_construction2
+		x = 25
+		y = 3
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_AGQSWvFz } 
+		completion_reward = { 
+			add_ideas = GER_keynesian_projects
+		} 
+
+	} 
+
+#Focus for Resource Expansion
+	focus = { 
+		id = GER_rDnBuLwo
+		icon = GFX_focus_generic_steel
+		x = 2
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_LnipzRrd focus = GER_MNFkjfxs } 
+		completion_reward = { 
+			add_ideas = GER_expanded_resources
+		} 
+
+	} 
+
+#Focus for Multi-Media Taxation
+	focus = { 
+		id = GER_nmZigXSd
+		icon = GFX_goal_generic_radar
+		x = 5
+		y = 5
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_erKDNEBu } 
+		completion_reward = { 
+			add_ideas = GER_telecom
+		} 
+
+	} 
+
+#Focus for Revolutionary Minds
+	focus = { 
+		id = GER_wqGbKeBT
+		icon = GFX_goal_generic_scientific_exchange
+		x = 23
+		y = 4
+		cost = 2
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_MYueQnIr } 
+		prerequisite = { focus = GER_VjZGFSKx } 
+		completion_reward = { 
+			add_research_slot = 1
+			add_ideas = GER_science_amnesty
+		} 
+
+	} 
+
+#Focus for Technocratic Economy
+	focus = { 
+		id = GER_csEontHN
+		icon = GFX_goal_generic_production2
+		x = 22
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_wqGbKeBT } 
+		mutually_exclusive = { focus = GER_autarkyberallem } 
+		completion_reward = { 
+			add_ideas = technocrat_economy
+		} 
+
+	} 
+
+#Focus for European Dominance
+	focus = { 
+		id = GER_SFDZXLaU
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 24
+		y = 6
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_autarkyberallem } 
+		mutually_exclusive = { focus = GER_PWValmeI } 
+		completion_reward = { 
+			add_ideas = GER_europakommision
+		} 
+
+	} 
+
+#Focus for Autarky über allem
+	focus = { 
+		id = GER_autarkyberallem
+		icon = GFX_goal_generic_production
+		x = 24
+		y = 5
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_wqGbKeBT } 
+		mutually_exclusive = { focus = GER_csEontHN } 
+		completion_reward = { 
+			add_ideas = autarky_economy
+		} 
+
+	} 
+
+#Focus for Socialism With German Characteristics
+	focus = { 
+		id = GER_TPpLhUkN
+		icon = GFX_focus_generic_concessions
+		x = 15
+		y = 2
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_rZdhzKFa } 
+		completion_reward = { 
+			add_stability = 0.1
+			add_political_power = 200
+		} 
+
+	} 
+
+#Focus for Free Trade Agreements
+	focus = { 
+		id = GER_PWValmeI
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 22
+		y = 6
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_csEontHN } 
+		mutually_exclusive = { focus = GER_SFDZXLaU } 
+		completion_reward = { 
+			add_ideas = GER_trade_national_socialism
+		} 
+
+	} 
+
+#Focus for Heydrich's Surprise Visit
+focus = { 
+id = GER_ZrYEpKTz
+icon = GFX_goal_generic_secret_weapon
+x = 45
+y = 1
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_xNWifqta } 
+completion_reward = { 
+country_event = { id = fatherland.7 days = 4 }
+} 
+
+} 
+
+#Focus for Indian Theorists
+focus = { 
+id = GER_GslzSdvu
+icon = GFX_goal_generic_improve_relations
+x = 14
+y = 3
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_TPpLhUkN } 
+mutually_exclusive = { focus = GER_MZxcuzHX } 
+completion_reward = { 
+add_ideas = GER_indian_advisors
+RAJ = { country_event = { days = 1 id = fatherland.10 } }
+} 
+
+} 
+
+#Focus for Italian Theorists
+focus = { 
+id = GER_MZxcuzHX
+icon = GFX_goal_tripartite_pact
+x = 16
+y = 3
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_TPpLhUkN } 
+mutually_exclusive = { focus = GER_GslzSdvu } 
+completion_reward = { 
+add_ideas = GER_corporatism
+ITA = { country_event = { days = 1 id = fatherland.9 } }
+} 
+
+} 
+
+#Focus for Killing The Old Guard
+focus = { 
+id = GER_HtPxcpdY
+icon = GFX_goal_generic_major_war
+x = 42
+y = 3
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_BlTQrMsF } 
+completion_reward = { 
+remove_ideas = rivalry
+country_event = { id = fatherland.13 }
+} 
+
+} 
+
+#Focus for Endkampf
+focus = { 
+id = GER_BlTQrMsF
+icon = GFX_goal_generic_attack_allies
+x = 40
+y = 2
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_ZrYEpKTz } 
+mutually_exclusive = { focus = GER_heydrichsunfortunateaccident } 
+available = { 
+has_country_flag = heydrich_coup
+} 
+completion_reward = { 
+add_stability = -0.25
+add_political_power = -300
+add_ideas = GER_endkampf
+} 
+
+} 
+
+#Focus for Dissolve The Reichstag
+focus = { 
+id = GER_fNKgaRXt
+icon = GFX_goal_generic_forceful_treaty
+x = 41
+y = 4
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_rFytHiSq } 
+prerequisite = { focus = GER_RjmKSUYL } 
+mutually_exclusive = { focus = GER_dMOQNWwR } 
+completion_reward = { 
+add_ideas = absolute_fuhrerprinzip
+add_political_power = -225
+add_stability = -0.15
+} 
+
+} 
+
+#Focus for Liquidating Academia
+focus = { 
+id = GER_rFytHiSq
+icon = GFX_focus_generic_socialist_science
+x = 44
+y = 3
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_BlTQrMsF } 
+completion_reward = { 
+add_political_power = 100
+country_event = { id = fatherland.12 }
+} 
+
+} 
+
+#Focus for Cleansing The Wehrmacht
+focus = { 
+id = GER_RjmKSUYL
+icon = GFX_goal_generic_political_pressure
+x = 36
+y = 3
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_BlTQrMsF } 
+completion_reward = { 
+country_event = { id = fatherland.15 }
+} 
+
+} 
+
+#Focus for Arrest Contacts to Heydrich
+focus = { 
+id = GER_arrestcontactstoheydrich
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+	x = 46
+	y = 8
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_partydiscipline } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_stability = 0.1
+		add_political_power = 35
+	} 
+
+} 
+
+#Focus for Purging The Bankers
+focus = { 
+	id = GER_YzxbWvdh
+	icon = GFX_goal_unknown
+	x = 38
+	y = 3
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_BlTQrMsF } 
+	completion_reward = { 
+		country_event = { id = fatherland.14 }
+	} 
+
+} 
+
+#Focus for Staff the Reichstag with SS Members
+focus = { 
+	id = GER_dMOQNWwR
+	icon = GFX_focus_ger_reichskommisariats
+	x = 39
+	y = 4
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_rFytHiSq } 
+	prerequisite = { focus = GER_RjmKSUYL } 
+	mutually_exclusive = { focus = GER_fNKgaRXt } 
+	completion_reward = { 
+		add_ideas = GER_SS_domination
+	} 
+
+} 
+
+#Focus for Afrikaner Volkstaat
+focus = { 
+	id = GER_xOBMhYlW
+	icon = GFX_goal_unknown
+	x = 38
+	y = 7
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_edfrOuUJ } 
+	completion_reward = { 
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SAF
+		}
+	} 
+
+} 
+
+#Focus for Wars of Conquest
+focus = { 
+	id = GER_edfrOuUJ
+	icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+	x = 40
+	y = 5
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_fNKgaRXt focus = GER_dMOQNWwR } 
+	completion_reward = { 
+		remove_ideas = GER_endkampf
+		remove_ideas = GER_paralized_generals
+		remove_ideas = GER_decimated_banking
+		remove_ideas = GER_anti_intellectualism
+		add_ideas = GER_endkrieg
+	} 
+
+} 
+
+#Focus for There Can Be Only One!
+focus = { 
+	id = GER_XAPoQigj
+	icon = GFX_focus_ger_assassinate_mussolini
+	x = 38
+	y = 8
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_xOBMhYlW } 
+	prerequisite = { focus = GER_unternehmenkaltersee } 
+	mutually_exclusive = { focus = GER_nejBWqDQ } 
+	completion_reward = { 
+		create_wargoal= { 
+			type = annex_everything 
+			target = ITA
+		}
+	} 
+
+} 
+
+#Focus for Death To The Yellow Peril!
+focus = { 
+	id = GER_nejBWqDQ
+	icon = GFX_focus_chi_one_china_policy
+	x = 42
+	y = 8
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_unternehmenkaltersee } 
+	prerequisite = { focus = GER_xOBMhYlW } 
+	mutually_exclusive = { focus = GER_XAPoQigj } 
+	completion_reward = { 
+		create_wargoal= { 
+			type = annex_everything 
+			target = PRC
+		}
+	} 
+
+} 
+
+#Focus for Germanic Neo-Paganism
+focus = { 
+	id = GER_XUZOmCfS
+	icon = GFX_focus_generic_home_defense
+	x = 40
+	y = 9
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_XAPoQigj focus = GER_nejBWqDQ } 
+	completion_reward = { 
+		add_ideas = GER_state_religion_asatru
+	} 
+
+} 
+
+#Focus for Unternehmen Kalter See
+focus = { 
+	id = GER_unternehmenkaltersee
+	icon = GFX_goal_generic_wolf_pack
+	x = 42
+	y = 7
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_edfrOuUJ } 
+	completion_reward = { 
+		create_wargoal = {
+			target = NOR
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = SWE
+			type = annex_everything
+		}
+	} 
+
+} 
+
+#Focus for Ensure Stability in the Reich
+focus = { 
+	id = GER_ensurestabilityinthereich
+	icon = GFX_goal_generic_propaganda
+	x = 47
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_purgethessleadership } 
+	prerequisite = { focus = GER_ssmobilization } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_political_power = 65
+		add_stability = 0.1
+	} 
+
+} 
+
+#Focus for Total Loyalty
+focus = { 
+	id = GER_totalloyalty
+	icon = GFX_focus_ger_reichskommisariats
+	x = 47
+	y = 9
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_aryanizetheparty } 
+	prerequisite = { focus = GER_arrestcontactstoheydrich } 
+	prerequisite = { focus = GER_partyleadership } 
+	prerequisite = { focus = GER_favorpartyofficers } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_ideas = GER_total_loyalty
+		add_stability = 0.05
+	} 
+
+} 
+
+#Focus for Market Clearing
+focus = { 
+	id = GER_SQGiFnTc
+	icon = GFX_goal_generic_consumer_goods
+	x = 21
+	y = 2
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_WyDSxqlf } 
+	completion_reward = { 
+		add_ideas = GER_market_clearing
+	} 
+
+} 
+
+#Focus for ENIGMA Banking
+focus = { 
+	id = GER_lqIOFhpx
+	icon = GFX_goal_poland_goal
+	x = 12
+	y = 5
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_myzuSJIt } 
+	prerequisite = { focus = GER_QSPtdjgs } 
+	completion_reward = { 
+		add_ideas = GER_enigma_bank
+	} 
+
+} 
+
+#Focus for Purge the SS Leadership
+focus = { 
+	id = GER_purgethessleadership
+	icon = GFX_goal_generic_major_war
+	x = 46
+	y = 5
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_partyprovisionalgovernment } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_stability = 0.05
+		add_political_power = -50
+	} 
+
+} 
+
+#Focus for Expanded Labour Front
+focus = { 
+	id = GER_WxGtMAne
+	icon = GFX_goal_generic_production
+	x = 16
+	y = 5
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_myzuSJIt } 
+	prerequisite = { focus = GER_QSPtdjgs } 
+	completion_reward = { 
+		add_ideas = GER_expanded_labor_front
+	} 
+
+} 
+
+#Focus for Military Loyalty
+focus = { 
+	id = GER_militaryloyalty
+	icon = GFX_goal_rhineland
+	x = 48
+	y = 7
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_ensurestabilityinthereich } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_political_power = 30
+	} 
+
+} 
+
+#Focus for Party Discipline
+focus = { 
+	id = GER_partydiscipline
+	icon = GFX_goal_generic_political_pressure
+	x = 46
+	y = 7
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_ensurestabilityinthereich } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_political_power = 25
+		add_stability = 0.05
+	} 
+
+} 
+
+#Focus for Die Glocke
+focus = { 
+	id = GER_zGlauNtK
+	icon = GFX_focus_rocketry
+	x = 40
+	y = 3
+	cost = 1
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_BlTQrMsF } 
+
+} 
+
+#Focus for Party Provisional Government
+focus = { 
+	id = GER_partyprovisionalgovernment
+	icon = GFX_goal_support_fascism
+	x = 47
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_goebbelspartycoup } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_stability = 0.05
+		add_political_power = -35
+	} 
+
+} 
+
+#Focus for Cutting Red Tape
+focus = { 
+	id = GER_bqBhXvmp
+	icon = GFX_goal_unknown
+	x = 18
+	y = 5
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_myzuSJIt } 
+	prerequisite = { focus = GER_QSPtdjgs } 
+	completion_reward = { 
+		add_stability = 0.2
+	} 
+
+} 
+
+#Focus for Hegemon of Europa
+focus = { 
+	id = GER_CtSGdEDi
+	icon = GFX_focus_chi_mission_to_germany
+	x = 23
+	y = 7
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_PWValmeI focus = GER_SFDZXLaU } 
+	completion_reward = { 
+		add_timed_idea = {
+			idea = GER_eco_finished
+			days = 365
+		}
+		country_event = {
+			id = fatherland.6
+			days = 15
+		}
+	} 
+
+} 
+
+#Focus for Mandatory Jungvolk Service
+focus = { 
+	id = GER_erKDNEBu
+	icon = GFX_goal_generic_construction2
+	x = 5
+	y = 4
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_FZEdljSb } 
+	completion_reward = { 
+		add_ideas = GER_jungvolk_roads
+	} 
+
+} 
+
+#Focus for Goods For The Aryan Race
+focus = { 
+	id = GER_KCRqlJpt
+	icon = GFX_focus_generic_aluminum
+	x = 9
+	y = 4
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_JdkaDUKB } 
+	completion_reward = { 
+		add_stability = 0.1
+		add_ideas = GER_consumer_goods
+	} 
+
+} 
+
+#Focus for Seize The Wealth
+focus = { 
+	id = GER_ydWZStmX
+	icon = GFX_seize
+	x = 7
+	y = 4
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_GIenmXZV } 
+	completion_reward = { 
+		add_stability = 0.15
+		add_political_power = 150
+	} 
+
+} 
+
+#Focus for Party Leadership
+focus = { 
+	id = GER_partyleadership
+	icon = GFX_focus_smiling_buddha
+	x = 48
+	y = 8
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_militaryloyalty } 
+	ai_will_do = { 
+		factor = 1
+	} 
+
+} 
+
+#Focus for Favor Party Officers
+focus = { 
+	id = GER_favorpartyofficers
+	icon = GFX_focus_rom_parties_end
+	x = 50
+	y = 8
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_militaryloyalty } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_ideas = GER_favor_party_officers
+		add_political_power = -15
+	} 
+
+} 
+
+#Focus for Kriegsmarine Contracts
+focus = { 
+	id = GER_myzuSJIt
+	icon = GFX_goal_generic_navy_battleship
+	x = 17
+	y = 4
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_MZxcuzHX focus = GER_GslzSdvu } 
+	completion_reward = { 
+		add_ideas = GER_kriegsmarine_contracts
+	} 
+
+} 
+
+#Focus for Nationalized Luftreich
+focus = { 
+	id = GER_LnipzRrd
+	icon = GFX_goal_generic_air_fighter2
+	x = 2
+	y = 4
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_iQSIldAP } 
+	mutually_exclusive = { focus = GER_MNFkjfxs } 
+	completion_reward = { 
+		188 = {
+			add_building_construction = {
+				type = air_base
+				level = 6
+				instant_build = yes
+			}
+		}
+		97 = {
+			add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+			}
+		}
+		98 = {
+			add_building_construction = {
+				type = air_base
+				level = 4
+			}
+		}
+		5 = {
+			add_building_construction = {
+				type = air_base
+				level = 4
+				instant_build = yes
+			}
+		}
+	} 
+
+} 
+
+#Focus for Anti-Partisan Taskforce
+focus = { 
+	id = GER_GIenmXZV
+	icon = GFX_focus_generic_coastal_fort
+	x = 7
+	y = 3
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_djiEAkHU } 
+	completion_reward = { 
+		add_ideas = GER_anti_partisan
+	} 
+
+} 
+
+#Focus for Expand Eastern Agriculture
+focus = { 
+	id = GER_JdkaDUKB
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 9
+	y = 3
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_djiEAkHU } 
+	completion_reward = { 
+		188 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		97 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		98 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		85 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		5 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			name = industry_bonus
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+	} 
+
+} 
+
+#Focus for Military Coalition Government
+focus = { 
+	id = GER_militarycoalitiongovernment
+	icon = GFX_goal_tripartite_pact
+	x = 54
+	y = 3
+	cost = 2
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_heydrichsunfortunateaccident } 
+	mutually_exclusive = { focus = GER_goebbelspartycoup } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		create_country_leader = {
+			name = "Wehrmacht"
+			desc = "POLITICSDESC"
+			picture = "Portrait_GER_Wehrmacht.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+	} 
+
+} 
+
+#Focus for Kaltenbrunner's SS Reforms
+focus = { 
+id = GER_kaltenbrunnersssreforms
+icon = GFX_goal_generic_intelligence_exchange
+x = 52
+y = 4
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_militarycoalitiongovernment } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+add_political_power= 25
+} 
+
+} 
+
+#Focus for Re-Educate Heydrich's Officers
+focus = { 
+	id = GER_reeducateheydrichsofficers
+	icon = GFX_goal_continuous_suppression
+	x = 53
+	y = 5
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_kaltenbrunnersssreforms } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_stability = 0.1
+	} 
+
+} 
+
+#Focus for Rommel's Wehrmacht Reforms
+focus = { 
+id = GER_rommelswehrmachtreforms
+icon = GFX_goal_generic_allies_build_infantry
+x = 56
+y = 4
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_militarycoalitiongovernment } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+add_political_power= 45
+} 
+
+} 
+
+#Focus for A United Military
+focus = { 
+id = GER_aunitedmilitary
+icon = GFX_goal_tfv_can_forced_quebec_conscription
+x = 54
+y = 6
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_rootoutheydrichsconspirators } 
+prerequisite = { focus = GER_reeducateheydrichsofficers } 
+prerequisite = { focus = GER_purgeinadequategenerals } 
+prerequisite = { focus = GER_favorcompetency } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = {
+add_stability = 0.1 
+add_ideas = GER_united_military
+} 
+
+} 
+
+#Focus for Heil Rommel
+focus = { 
+id = GER_heilrommel
+icon = GFX_heilrommel
+x = 54
+y = 7
+cost = 1
+available_if_capitulated = yes 
+prerequisite = { focus = GER_aunitedmilitary } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+create_country_leader = {
+	name = "Erwin Rommel"
+	desc = "POLITICSDESC"
+	picture = "Portrait_GER_Erwin_Rommel.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+} 
+
+} 
+
+#Focus for Finance Rockwell's Party
+focus = { 
+	id = GER_financerockwellsparty
+	icon = GFX_financerockwellsparty
+	x = 50
+	y = 12
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_americanfront } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		USA = {add_stability = -0.05}
+		USA = {add_ideas = fascist_influence}
+	} 
+
+} 
+
+#Focus for Meetings with Quebecois Nationalists
+focus = { 
+	id = GER_meetingswithquebecoisnationalists
+	icon = GFX_goal_tfv_can_compromise_with_quebec
+	x = 48
+	y = 12
+	cost = 4
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_americanfront } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		CAN = {add_stability = -0.05}
+		CAN = {add_ideas = fascist_influence}
+	} 
+
+} 
+
+#Focus for Influence Finnish Politics
+focus = { 
+	id = GER_influencefinnishpolitics
+	icon = GFX_influencefinnishpolitics
+	x = 45
+	y = 13
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_securefrancosalliance } 
+	prerequisite = { focus = GER_contactswedishfascists } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		FIN = {add_ideas = fascist_influence}
+	} 
+
+} 
+
+#Focus for Contact Swedish Fascists
+focus = { 
+	id = GER_contactswedishfascists
+	icon = GFX_contactswedishfascists
+	x = 44
+	y = 12
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_europeandiplomaticmission } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		SWE = {add_ideas = fascist_influence}
+	} 
+
+} 
+
+#Focus for Favor Competency
+focus = { 
+	id = GER_favorcompetency
+	icon = GFX_focus_generic_military_academy
+	x = 55
+	y = 5
+	cost = 2
+	available_if_capitulated = yes 
+	prerequisite = { focus = GER_rommelswehrmachtreforms } 
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
+		add_ideas = GER_competency
+	} 
+
+} 
+
+#Focus for Root Out Heydrichs Conspirators
+focus = { 
+	id = GER_rootoutheydrichsconspirators
+	icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 51
+y = 5
+cost = 3
+available_if_capitulated = yes 
+prerequisite = { focus = GER_kaltenbrunnersssreforms } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+add_stability = 0.05
+} 
+
+} 
+
+#Focus for Protect Germania's Interest
+	focus = { 
+		id = GER_protectgermaniasinterest
+		icon = GFX_goal_generic_defence
+		x = 56
+		y = 8
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_heilrommel } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_political_power = 50
+		} 
+
+	} 
+
+#Focus for Repeal laws against Untermenschen
+	focus = { 
+		id = GER_repeallawsagainstuntermenschen
+		icon = GFX_focus_generic_polish_deal
+		x = 53
+		y = 9
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_easeuponthepeople } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_manpower = 6500
+			add_stability = 0.05
+		} 
+
+	} 
+
+#Focus for Remove Laws against Christians
+	focus = { 
+		id = GER_removelawsagainstchristians
+		icon = GFX_removelawsagainstchristians
+		x = 51
+		y = 9
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_easeuponthepeople } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = -25
+		} 
+
+	} 
+
+#Focus for Ease up on the People
+	focus = { 
+		id = GER_easeuponthepeople
+		icon = GFX_goal_tripartite_pact
+		x = 52
+		y = 8
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_heilrommel } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_political_power = -25
+			add_stability = 0.05
+		} 
+
+	} 
+
+#Focus for Too Dangerous
+	focus = { 
+		id = GER_toodangerous
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 57
+y = 9
+cost = 3
+available_if_capitulated = yes 
+prerequisite = { focus = GER_protectgermaniasinterest } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = ITA
+}
+} 
+
+} 
+
+#Focus for Protect Kazakhs Minerals
+focus = { 
+id = GER_protectkazakhsminerals
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 55
+y = 9
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_protectgermaniasinterest } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+create_wargoal = { type = puppet_wargoal_focus target = KAZ }
+} 
+
+} 
+
+#Focus for American Front
+focus = { 
+id = GER_americanfront
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 49
+		y = 11
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_warsofpropaganda } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_political_power = 35
+		} 
+
+	} 
+
+#Focus for Wars of Propaganda
+	focus = { 
+		id = GER_warsofpropaganda
+		icon = GFX_goal_generic_propaganda
+		x = 47
+		y = 10
+		cost = 2
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_totalloyalty } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_political_power = 35
+		} 
+
+	} 
+
+#Focus for European Diplomatic Mission
+	focus = { 
+		id = GER_europeandiplomaticmission
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 45
+		y = 11
+		cost = 4
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_warsofpropaganda } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			add_political_power = 35
+		} 
+
+	} 
+
+#Focus for Sail West
+	focus = { 
+		id = GER_sailwest
+		icon = GFX_sailwest
+		x = 46
+		y = 15
+		cost = 2
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_knockouttheitalianpower } 
+		mutually_exclusive = { focus = GER_marcheast } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			create_wargoal= { 
+				type = annex_everything 
+				target = USA
+			}
+		} 
+
+	} 
+
+#Focus for Germanica Pacem
+	focus = { 
+		id = GER_germanicapacem
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 47
+y = 16
+cost = 3
+available_if_capitulated = yes 
+prerequisite = { focus = GER_sailwest } 
+prerequisite = { focus = GER_marcheast } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+add_stability = 0.25
+add_ideas = GER_pacem
+} 
+
+} 
+
+#Focus for March East
+focus = { 
+id = GER_marcheast
+icon = GFX_marcheast
+x = 48
+y = 15
+cost = 2
+available_if_capitulated = yes 
+prerequisite = { focus = GER_knockouttheitalianpower } 
+mutually_exclusive = { focus = GER_sailwest } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = PRC
+}
+} 
+
+} 
+
+#Focus for Knock Out the Italian Power
+focus = { 
+id = GER_knockouttheitalianpower
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 47
+		y = 14
+		cost = 2
+		available_if_capitulated = yes 
+		prerequisite = { focus = GER_influencefinnishpolitics } 
+		prerequisite = { focus = GER_sponsormexicannationalists } 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = { 
+			create_wargoal= { 
+				type = annex_everything 
+				target = ITA
+			}
+		} 
+
+	} 
+
+#Focus for Sponsor Mexican Nationalists
+	focus = { 
+		id = GER_sponsormexicannationalists
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 49
+y = 13
+cost = 4
+available_if_capitulated = yes 
+prerequisite = { focus = GER_meetingswithquebecoisnationalists } 
+prerequisite = { focus = GER_financerockwellsparty } 
+ai_will_do = { 
+factor = 1
+} 
+completion_reward = { 
+MEX = {add_stability = -0.1}
+MEX = {add_ideas = fascist_influence}
+} 
+
+} 
+
+#Focus for Secure Franco's Alliance
+		focus = { 
+			id = GER_securefrancosalliance
+			icon = GFX_goal_generic_forceful_treaty
+			x = 46
+			y = 12
+			cost = 2
+			available_if_capitulated = yes 
+			prerequisite = { focus = GER_europeandiplomaticmission } 
+			ai_will_do = { 
+				factor = 1
+			} 
+			completion_reward = { 
+				add_to_faction = SPR
+			} 
+
+		} 
+
+#Focus for Saudi Arabia
+		focus = { 
+			id = GER_saudiarabia
+			icon = GFX_saudiarabia
+			x = 54
+			y = 12
+			cost = 4
+			available_if_capitulated = yes 
+			prerequisite = { focus = GER_syria } 
+			prerequisite = { focus = GER_iraq } 
+			ai_will_do = { 
+				factor = 1
+			} 
+			completion_reward = { 
+				create_wargoal= { 
+					type = annex_everything 
+					target = SAU
+				}
+			} 
+
+		} 
+
+#Focus for Iraq
+		focus = { 
+			id = GER_iraq
+			icon = GFX_iraq
+			x = 55
+			y = 11
+			cost = 4
+			available_if_capitulated = yes 
+			prerequisite = { focus = GER_operationfallingcrescent } 
+			ai_will_do = { 
+				factor = 1
+			} 
+			completion_reward = { 
+				create_wargoal= { 
+					type = annex_everything 
+					target = IRQ
+				}
+			} 
+
+		} 
+
+#Focus for Operation: Falling Crescent
+		focus = { 
+			id = GER_operationfallingcrescent
+			icon = GFX_operationfallingcrescent
+			x = 54
+			y = 10
+			cost = 4
+			available_if_capitulated = yes 
+			prerequisite = { focus = GER_repeallawsagainstuntermenschen } 
+			prerequisite = { focus = GER_protectkazakhsminerals } 
+			prerequisite = { focus = GER_toodangerous } 
+			prerequisite = { focus = GER_removelawsagainstchristians } 
+			ai_will_do = { 
+				factor = 1
+			} 
+			completion_reward = { 
+				create_wargoal= { 
+					type = annex_everything 
+					target = TUR
+				}
+			} 
+
+		} 
+
+#End of focuses 
+	}

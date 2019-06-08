@@ -1,0 +1,760 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Strelkovaya Diviziya"			# Rifle Division
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		
+		#engineer = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 0 } 		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+division_template = {
+	name = "Gornostrelkovaya Diviziya"		# Mountain Rifle Division
+	division_names_group = SOV_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }	
+		mountaineers = { x = 3 y = 0 }	
+		mountaineers = { x = 3 y = 1 }	
+		mountaineers = { x = 3 y = 2 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 		# Heavy Arty Regiment had 2x 122mm bn
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
+	division_names_group = SOV_MOT_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# BT-7 tanks
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		#recon = { x = 0 y = 0 } 		
+		#engineer = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "Kavaleriyskaya Diviziya" 			# Cavalry Division
+	division_names_group = SOV_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 				# Recon bn had 16x L tanks, 45 ACs
+	}
+}
+division_template = {
+	name = "NKVD Pogranichnaya Diviziya"		# NKVD Border Guard Division
+	division_names_group = SOV_GAR_01
+												# Note: garrison units (all have oldest equipment, low experience)
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Vozdushno-Desantnaya"				# Represents a pair of independent airborne brigades
+	division_names_group = SOV_PAR_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Tankovaya Korpus" 					# Note: Represents regular tank corps (formerly mechanized corps; 4 existed in 1938-40) 
+	division_names_group = SOV_ARM_02
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# BT-7 tanks
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }	
+		light_armor = { x = 1 y = 0 }		# BT-7 tanks	
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }			
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }		
+		motorized = { x = 3 y = 0 }		
+		motorized = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+	}
+}
+division_template = {
+	name = "Legko-Tankovaya Brigada" 				# Light Tank Brigades - Represents a pair of independent tank brigades (2 regular (light) brigades) 
+	division_names_group = SOV_ARM_04
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# T-26 or BT-5/7 tanks
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }	
+		light_armor = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+division_template = {
+	name = "Tankovaya Brigada" 				# Tank Brigade - Represents a pair of independent tank brigades (1 heavy (medium) + 1 regular (light) brigades) 
+	division_names_group = SOV_ARM_04
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		# T-28 (medium) infantry tanks
+		medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }	
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+division_template = {
+	name = "Tyazolaya-Tankovaya Brigada" 	# Heavy Tank Brigades - Represents a pair of independent tank brigades (1 heavy (truly heavy) + 1 regular (light) brigades) 
+	division_names_group = SOV_ARM_04
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }		# T-35 heavy tanks
+		heavy_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }		# T-26 or BT-5/7 tanks			
+		light_armor = { x = 1 y = 0 }		# T-26 or BT-5/7 tanks		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 		
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn, engineers), 2 Brigades: Leningrad, Sevastopol
+
+##### OOB #####
+units = {
+	
+
+	####### Dal'nevostochnyi Teatr VD (Far Eastern TVD) (CO: ) #######
+	##### Dal'niy Vostok Voennyii Okrug (Far Eastern Military District) (CO: Blucker) #####
+		
+
+
+
+	### 1ya Primorskaya Armiya (CO: Podlas) ###		
+	# 26ya Strelkovyi Korpus (CO: ) #
+			
+	# 31ya Strelkovyi Korpus (CO: ) #
+	division= {	# "92ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 92
+		}
+		location = 12189
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "8ya 'Dal'nevostochnyi' Kav. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10466
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "DVVO Tankovaya Gruppa"		
+		location = 12189
+		division_template = "Legko-Tankovaya Brigada"		# 3ya TB (T-26), 11ya TB (T-26)
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+			
+			
+
+	# 59ya Strelkovyi Korpus (CO: ) #
+	division= {	# "39ya 'Tihookeanskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 4805
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "59ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location = 7672
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	
+	### 2ya Primorskaya Armiya (CO: ) ###		
+	division= {	# "69ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 69
+		}
+		location = 12657
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	# 18ya Strelkovyi Korpus (CO: ) #
+	division= {	# "12ya 'Amur' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 10722
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "34ya 'Sredne-Volzh.' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 7801
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "35ya 'Sibirskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 10655
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	# 20ya Strelkovyi Korpus (CO: ) #
+	division= {	# "3ya 'Krymskaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4725
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "78ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 78
+		}
+		location = 7763
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+
+
+	#### Zabaikal'skii Voennyii Okrug (Transbaikal Military District) -- Argunsk ####
+	division= {	# "18ya NKVD Pogranichnaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 12641
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}			
+	### 1ya Gruppa Armiya (CO: ) ###		
+	division= {	# "36ya 'Zabaikal'skaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 12622
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "57ya 'Ural'skaya' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 12622
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	# "82ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 10559
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {			
+		name = "20ya Tankovaya Korpus"		
+		location = 10559
+		division_template = "Tankovaya Korpus"			# BT-5s
+		start_experience_factor = 0.3
+	}
+	# 12ya Strelkovyi Korpus (CO: )	#
+	division= {	# "93ya 'Vostochno -Sibir.' Strelk. Div."		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 93
+		}
+		location = 12543
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division= {	# "94ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 94
+		}
+		location = 12543
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division= {	# "114ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 114
+		}
+		location = 7851
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	# 32ya Strelkovyi Korpus (CO: )	#
+			
+	division= {	# "109ya Motostrelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 4719
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "152ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 152
+		}
+		location = 4719
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+
+	#### Sibirskii Voennyii Okrug (Siberian Military District) (CO: ) ####
+	division= {	# "71ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 71
+		}
+		location = 9292 #Chelya
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division= {	# "7ya NKVD Pogranichnaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1821 #Sverdlovsk
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}			
+	# 52ya Strelkovyi Korpus (CO: )	#
+	division= {	# "91ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 91
+		}
+		location = 1818
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "119ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 119
+		}
+		location = 10610
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "166ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 166
+		}
+		location = 1818
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	# 53ya Strelkovyi Korpus (CO: )	#
+	division= {	# "107ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location = 1591
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "133ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 133
+		}
+		location = 1591
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "178ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 178
+		}
+		location = 1591
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	# 58ya Strelkovyi Korpus (CO: )	#
+	division= {	# "37ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 10716 # German Border
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}			
+	division= {	# "102ya Strelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 4824 #Tyumen
+		division_template = "Strelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "194ya Gornostrelkovaya Diviziya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 194
+		}
+		location = 12662
+		division_template = "Gornostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+}					
+					
+
+### Air Wings
+air_wings = {
+	195 = {																# Leningrad 
+		### LVO Aviatsya Komandovaniya ###
+		fighter_equipment_1 = { owner = "SOV" amount = 225 }				# 14ya Istrebitel'nye Avia. Polk -- I-16
+						# 54ya Istrebitel'nye Avia. Polk -- I-16
+						# 59ya Istrebitel'nye Avia. Polk -- I-16
+						# 15ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "SOV" amount = 216 }			# 29ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 55ya Bombardirovochnye Avia. Polk -- DB-3A
+					# 68ya Bombardirovochnye Avia. Polk -- DB-3A
+					# 71ya Bombardirovochnye Avia. Polk -- DB-3A
+		### VVS - KBF Aviatsya Komandovaniya ###
+		nav_bomber_equipment_1 = { owner = "SOV" amount = 96 }			# 8ya VMF Aviabrigada -- MBR-2
+					# 10ya VMF Aviabrigada -- MBR-2
+	}
+	219 = {																# Moscow 
+		### MVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "SOV" amount = 90 }				# 2ya Istrebitel'nye Avia. Polk -- I-15
+						# 54ya Istrebitel'nye Avia. Polk -- I-15
+		transport_plane_equipment_1 = { owner = "SOV" amount = 60 }		# 46ya Transporta Avia. Tupolev ANT-9
+		### 1ya Vozdushnaya Armiya ###
+		strat_bomber_equipment_1 =  { owner = "SOV" amount = 60 }		# 13ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+				# 27ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+	}
+	206 = {																# Minsk 
+		### BOVO Aviatsya Komandovaniya ###
+		fighter_equipment_1 = { owner = "SOV" amount = 90 }				# 56ya Istrebitel'nye Avia. Polk -- I-16
+						# 58ya Istrebitel'nye Avia. Polk -- I-16
+		fighter_equipment_0 = { owner = "SOV" amount = 60 }				# 66ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "SOV" amount = 60 }				# 8ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "SOV" amount = 216 }			# 16ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 18ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 65ya Bombardirovochnye Avia. Polk -- DB-3A
+					# 70ya Bombardirovochnye Avia. Polk -- DB-3A
+	}
+	242 = {																# Smolensk 
+		### KalVO Aviatsya Komandovaniya ###
+		fighter_equipment_1 = { owner = "SOV" amount = 60 }				# 17ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+	}
+	202 = {																# Kiev 
+		### KOVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "SOV" amount = 60 }				# 22ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "SOV" amount = 90 }				# 51ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+						# 69ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "SOV" amount = 144 }			# 1ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 10ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 62ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+	}
+	221 = {																# Kharkov 
+		### KhVO Aviatsya Komandovaniya ###
+		tac_bomber_equipment_1 =  { owner = "SOV" amount = 60 }			# 19ya Bombardirovochnye Avia. Polk -- DB-3A
+	}
+	
+	137 = {																# Sevastopol 
+		### VVS - BSF Aviatsya Komandovaniya ###
+		nav_bomber_equipment_1 = { owner = "SOV" amount = 96 }			# 4ya VMF Aviabrigada -- MBR-2
+					# 7ya VMF Aviabrigada -- MBR-2
+	}
+	231 = {																# Tblisi 
+		### ZakVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "SOV" amount = 60 }				# 60ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+	}
+	218 = {																# Rostov na don 
+		### 3ya Vozdushnaya Armiya ###
+		strat_bomber_equipment_1 =  { owner = "SOV" amount = 60 }		# 3ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+				# 7ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+	}
+
+	408 = {																# Vladivostock 
+		### Dal'nevostochnyi Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "SOV" amount = 165 }				# 31ya Istrebitel'nye Avia. Polk -- I-15
+						# 53ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+						# 61ya Istrebitel'nye Avia. Polk -- I-153 (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "SOV" amount = 135 }				# 20ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+						# 26ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+						# 28ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "SOV" amount = 45 }				# 72ya Shturmovye Avia. Polk -- SB-2M-100
+		tac_bomber_equipment_1 =  { owner = "SOV" amount = 72 }			# 12ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+					# 25ya Bombardirovochnye Avia. Polk -- DB-3B (REVISIT -- VARIANT)
+		strat_bomber_equipment_1 =  { owner = "SOV" amount = 100 }		# 5ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+		### 2ya Vozdushnaya Armiya ###
+				# 30ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+				# 64ya Dal'nyaya Bombardirovochnye Avia. Polk -- TB-3-4M
+	}
+	563 = {																# Chita 
+		### ZbkVO Aviatsya Komandovaniya ###
+		fighter_equipment_0 = { owner = "SOV" amount = 60 }				# 100ya Istrebitel'nye Avia. Polk -- I-15
+		fighter_equipment_1 = { owner = "SOV" amount = 45 }				# 67ya Smeshannye Avia. Polk -- I-16 Type 10 (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "SOV" amount = 60 }				# 23ya Shturmovye Avia. Polk -- SB-2M-100
+		tac_bomber_equipment_1 =  { owner = "SOV" amount = 60 }			# 63ya Bombardirovochnye Avia. Polk -- DB-3A
+	}
+	409 = {																# Khabarovsk 
+		### SibVO Aviatsya Komandovaniya ###
+		CAS_equipment_1 =  { owner = "SOV" amount = 60 }				# 52ya Shturmovye Avia. Polk -- SB-2M-103 (REVISIT -- VARIANT)
+	}
+
+}
+
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 15
+		progress = 0.1
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "SOV" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 5
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 4
+		progress = 0.15
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = strat_bomber_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+}
+	#####################

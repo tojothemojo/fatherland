@@ -1,0 +1,1103 @@
+ideas = {
+	country = {
+
+		
+		
+			GER_united_military = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.45
+			}
+		}
+		
+		
+		
+			GER_competency = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org  = 10
+				defence = 0.05
+				
+			}
+		}
+		
+		GER_pacem = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				 	army_infantry_attack_factor = 0.05 
+				
+			}
+		}
+		
+		
+		
+			GER_consumer_goods= {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture =generic_production_bonus
+
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                industrial_capacity_factory = 0.1
+            }
+        }
+
+
+
+
+		GER_total_loyalty = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+				army_attack_factor = 0.1
+				army_armor_attack_factor = 0.1
+			}
+		}
+		
+		GER_favor_party_officers = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_org = -5
+			}
+		}
+		
+		
+		
+		totaler_krieg = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+			}
+			
+			
+
+			
+			picture = GFX_idea_totaler_krieg
+		}
+		
+		
+		
+		
+		GER_market_clearing = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				justify_war_goal_time = -0.3
+				political_power_gain = -0.05
+			}
+			
+			picture = GFX_idea_market_clearing
+		}
+		
+
+		
+		
+		GER_military_factory_expansion = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				#economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+			}
+			
+			picture = GFX_idea_military_factory_expansion
+		}
+		
+
+		
+		
+		GER_expanded_resources = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				local_resources_factor = 0.1
+				#economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+			}
+			
+			picture = GFX_idea_expanded_resources
+		}
+		
+
+		
+		
+		GER_anti_partisan = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				enemy_partisan_effect = -0.02
+				decryption_factor = 0.02
+				encryption_factor = 0.02
+				drift_defence_factor = 0.02
+				foreign_subversive_activites = -0.02
+				subversive_activites_upkeep = -0.02
+			}
+			
+			picture = generic_secret_police
+		}
+		
+
+		
+		
+		GER_lebensborn = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.6
+				consumer_goods_factor = 0.08
+			}
+			
+			picture = GFX_idea_lebensborn
+		}
+		
+
+		
+		
+		GER_jungvolk_roads = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				industry_repair_factor = 0.5
+			}
+			
+			picture = GFX_idea_jungvolk_roads
+		}
+		
+
+		
+		
+		GER_telecom = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+			
+			picture = GFX_idea_telecom
+		}
+		
+
+		
+		
+		GER_trade_national_socialism = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				min_export = -0.10
+				global_building_slots_factor = 0.10
+			}
+			
+			picture = can_wartime_prices_and_trade_board
+		}
+		
+
+		
+		
+		GER_eco_finished = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+			
+			picture = generic_production_bonus
+		}
+		
+
+		
+		
+		
+		
+
+		
+
+
+		
+		
+		GER_streamlined_mic = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			
+			picture = german_advisors
+		}
+		
+
+		
+		
+		GER_kriegsmarine_contracts = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_naval_base_factor = 0.20
+			}
+			
+			picture = GFX_idea_kriegsmarine_contracts
+		}
+		
+
+		
+		
+		GER_enigma_bank = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				encryption_factor = 0.2
+				decryption_factor = 0.2
+			}
+			
+			picture = GFX_idea_enigma_bank
+		}
+		
+
+		
+		
+		GER_censorship = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				subversive_activites_upkeep	= -0.1
+				foreign_subversive_activites = -0.2
+			}
+			
+			picture = GFX_idea_censorship
+		}
+
+
+		
+		
+		GER_expanded_labor_front = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				training_time_factor = -0.1
+				industrial_capacity_factory = -0.25 
+			}
+			
+			picture = GFX_idea_expanded_labor_front
+		}
+
+
+
+		
+		GER_keynesian_projects = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = 0.10
+			}
+			
+			picture = GFX_idea_keynesian_projects
+		}
+
+
+		
+		
+		GER_science_amnesty = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				research_speed_factor  = -0.05
+			}
+			
+			picture = generic_research_bonus
+		}
+		
+
+		
+		
+		technocrat_economy = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = -0.15
+				political_power_gain = 0.25
+			}
+			
+			picture = generic_production_bonus
+		}
+		
+
+		
+		
+		autarky_economy = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+				conscription = 0.01
+			}
+			
+			picture = german_advisors
+		}
+		
+
+		
+		
+		GER_europakommision = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			
+			picture = generic_production_bonus
+		}
+		
+
+		
+		
+		GER_endkampf = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.10
+				naval_doctrine = -0.10
+				air_doctrine = -0.10
+			}
+
+			modifier = {
+				army_org_factor = -0.5
+			}
+		}
+		
+
+		
+		
+		GER_SS_domination = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				army_org_factor = 0.03
+				training_time_factor = 0.1
+				max_planning = 0.2
+			}
+			
+			picture = GFX_idea_SS_domination
+		}
+		
+
+		
+		
+		absolute_fuhrerprinzip = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.10
+			}
+			
+			picture = GFX_idea_absolute_fuhrerprinzip
+		}
+		
+
+		
+		
+
+
+		
+		
+		GER_anti_intellectualism = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				research_speed_factor  = -0.03
+			}
+			
+			picture = generic_research_bonus
+		}
+		
+
+		
+		
+		GER_decimated_banking = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				political_power_cost = 0.75
+				consumer_goods_factor = 0.2
+				conscription_factor = -0.35
+			}
+			
+			picture = generic_pp_unity_bonus
+		}
+		
+
+		
+		
+		GER_paralized_generals = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				planning_speed = 0.20
+				army_speed_factor = -0.05
+			}
+			
+			picture = generic_pp_unity_bonus
+		}
+		
+
+		
+		
+		GER_endkrieg = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				conscription = 0.02
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				war_support_factor = 0.10
+			}
+			
+			picture = GER_total_war_idea
+		}
+		
+
+		
+		
+		GER_extended_war_economy = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_arms_factory_factor = 0.15
+			}	
+			
+			picture = GFX_extended_war_economy
+		}
+		
+
+		
+		
+		GER_denomination = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				political_power_gain = -0.06
+				production_factory_max_efficiency_factor = 0.12
+			}	
+			
+			picture = GFX_denomination
+		}
+		
+
+		
+		
+		gestapo = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				resistance_tick_auto = -4
+			}
+			
+			
+
+			
+			picture = GFX_idea_gestapo
+			
+		}
+		
+		
+		
+		
+		
+		society_terror = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				resistance_tick_auto = -6
+			}
+			
+			
+
+			
+			picture = GFX_idea_society_terror
+		}
+		
+		
+		
+		
+		
+		
+		
+		ssarbeiterfront = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.10
+			}
+			
+			
+
+			
+			picture = GFX_idea_ssarbeiterfront
+		}
+		
+		
+
+		
+		
+		rivalry = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.10
+				attrition = 0.10 
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_rivalry
+		}
+		
+		
+		
+		
+		
+
+		
+		scheming_berlin = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				political_power_gain = -0.5
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+		
+		
+		
+		
+		endless_war = {
+			
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			
+			cancel = {
+				has_war = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				army_morale_Factor = -0.1
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_endless_war
+		}
+
+		
+		
+		
+		state_controlled_corporations = {
+			
+			allowed = {
+				tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				conversion_cost_mil_to_civ_factor = 0.2
+				conversion_cost_civ_to_mil_factor = 0.2
+				consumer_goods_factor = 0.20
+				
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+		
+		
+		
+		
+		german_capitalism = {
+			
+			allowed = {
+				tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = -0.2
+				research_speed_factor  = -0.03
+				
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+		
+		
+		
+		
+		corporatist_influences = {
+			
+			allowed = {
+				tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				
+				production_speed_buildings_factor = 0.05
+				political_power_gain = -0.3
+				
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+		
+		
+		
+		
+		school_military_focus = {
+			
+			allowed = {
+				tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				conscription = 0.01
+				
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+		
+		
+		
+		
+		school_science_focus = {
+			
+			allowed = {
+				tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				research_speed_factor  = -0.01
+				
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+		
+		
+		
+		
+		school_work_focus = {
+			
+			allowed = {
+				tag = GER
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			
+			modifier = {
+				production_speed_buildings_factor = 0.02
+				
+				
+			}
+			
+			
+
+			
+			picture = GFX_idea_scheming_berlin
+		}
+
+	}
+
+
+
+
+}
